@@ -1,0 +1,253 @@
+/* =======================================
+    リセットCSS
+======================================= */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+
+/* =======================================
+    ヘッダー
+======================================= */
+header {
+  width: 100%;
+  height: 81px;
+  /* background-color: red; */
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 4px solid #B5DEDB;
+  display: flex;
+  align-items: center;
+}
+
+div#header_inner {
+  width: 97%;
+  height: 60px;
+  margin: 0 auto;
+  /* background-color: yellow; */
+  display: flex;
+}
+
+div#header_left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+div#header_left img {
+  width: 467px;
+}
+
+div#header_left span {
+  padding-left: 23px;
+}
+
+div#header_right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+div#japa_eng {
+  line-height: 10px;
+}
+
+div#japa_eng ul {
+  display: flex;
+}
+
+div#japa_eng ul li {
+  padding-right: 15px;
+  line-height: 20px;
+  margin-top: 20px;
+  height: 20px;
+}
+
+div#japa_eng ul li:last-child {
+  margin-right: 35px;
+  padding-left: 15px;
+  border-left: 1px solid #E9E9E9;
+  color: #B9BDBD;
+}
+
+div#header_icon {
+  margin-top: 16px;
+}
+
+div#header_icon span {
+  line-height: 30px;
+}
+
+a#region {
+  padding-right: 25px;
+  border-right: 1px solid #E9E9E9;
+  color: #313131;
+}
+
+a#region img {
+  padding-right: 15px;
+}
+
+a#search {
+  margin: 0 25px;
+}
+
+
+
+/* =======================================
+    トップナビゲーション
+======================================= */
+div#main_nav {
+  width: 100%;
+  height: 73px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+div#main_nav nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+div#main_nav nav ul li {
+  width: 20%;
+  height: 73px;
+  display: flex;
+  align-items: center;
+}
+
+
+div#main_nav nav ul li a {
+  width: 100%;
+  border-left: 1px solid #E9E9E9;
+  padding: 15px 35px;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+div#main_nav nav ul li a:hover {
+  background-color: #E9F5F4;
+  text-decoration: none;
+}
+
+
+/* =======================================
+    トップセクション
+======================================= */
+section#top_section {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  color: #3D4342;
+}
+
+div#top_image {
+  height: 700px;
+  background-image: url(素材/heroVisual.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+div#top_image img {
+  width: 70%;
+  height: auto;
+}
+
+div.container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 65px 0;
+}
+
+div#top_news a {
+  color: #3D4342;
+  display: block;
+  text-decoration: none;
+}
+
+div#top_news a:hover,
+div#news_sub a:hover,
+div#news_sub p:hover {
+  opacity: 0.7;
+}
+
+div#top_news a dl {
+  display: flex;
+  border-bottom: 1px dotted #ADADAD;
+  
+}
+
+dl#news_1 {
+  border-top: 1px dotted #ADADAD;
+  padding-top: 10px;
+}
+
+div#top_news a dl dt {
+  width: 25%;
+  padding: 5px;
+  font-weight: normal;
+}
+
+div#top_news a dl dt span {
+  color: #fff;
+  background-color: black;
+  font-size: 10px;
+  padding: 5px 10px;
+  margin-left: 20px;
+  text-align: center;
+  width: 131px;
+  display: inline-block;
+}
+
+div#top_news a dl dd {
+  padding: 5px;
+}
+
+div#top_news a dl dd img {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 12px;
+}
+
+div#news_sub {
+  width: 100%;
+}
+
+div#news_sub a {
+  color: #3D4342;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+div#news_sub p {
+  text-align: end;
+  cursor: pointer;
+}
+
+div#news_sub ul li {
+  margin-bottom: 20px;
+}
+
+div#news_sub div a {
+  padding-right: 20px;
+}
+
+
+
+
+/* =======================================
+    ビジネスセクション
+======================================= */
+section#business {
+  
+}
