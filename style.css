@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+body {
+  color: #000000;
+}
+
 
 
 
@@ -176,7 +180,7 @@ div#top_news a {
 
 div#top_news a:hover,
 div#news_sub a:hover,
-div#news_sub p:hover {
+div#news_sub span:hover {
   opacity: 0.7;
 }
 
@@ -220,6 +224,8 @@ div#top_news a dl dd img {
 
 div#news_sub {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 div#news_sub a {
@@ -229,17 +235,18 @@ div#news_sub a {
 }
 
 
-div#news_sub p {
+div#news_sub span {
   text-align: end;
   cursor: pointer;
 }
 
 div#news_sub ul li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 div#news_sub div a {
   padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 
@@ -249,5 +256,154 @@ div#news_sub div a {
     ビジネスセクション
 ======================================= */
 section#business {
-  
+  widows: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+div#business_top {
+  width: 100%;
+  height: 440px;
+  background-image: url(素材/key.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div#business_top::before {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+
+div#business_top h2,h3,p {
+  z-index: 1;
+}
+
+div#business_top h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+div#business_top h3 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 25px;
+  letter-spacing: 3px;
+}
+
+div#business_top p {
+  line-height: 32px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+div#business_int {
+  width: 100%;
+  height: 403px;
+  display: flex;
+}
+
+div#business_int_left {
+  background-image: url(素材/30641_thumbnail.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+}
+
+div#business_int_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.business_container {
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+div#top_left {
+  background-image: url(素材/29910_thumbnail.jpg);
+}
+
+div#top_right {
+  background-image: url(素材/thumb.jpg);
+
+}
+
+div#bottom_left {
+  background-image: url(素材/thmub.jpg);
+}
+
+div#bottom_right {
+  background-image: url(素材/KV.jpg);
+}
+
+div#business_int a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ 
+}
+
+div#business_int a::before {
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  transition: all 0.5s;
+}
+
+div#business_int a:hover::before {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+div#business_int a dl {
+  width: 90%;
+  z-index: 1;
+}
+
+div#business_int a dl dt {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+div#business_int a dl dd {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+div#business_int a dl dd span {
+  padding: 10px 0 ;
 }
